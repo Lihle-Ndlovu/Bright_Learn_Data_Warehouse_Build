@@ -37,6 +37,7 @@ These will allow BI team to build dashboards and they will not limited to one to
 - **Which store-product combinations**
 
 ### ETL Process
+
 - **Extract** -data from source files/database  
 - **Transform** -data using SSIS packages  
 - **Load** -data into SQL Server data warehouse  
