@@ -17,24 +17,24 @@ The project follows a **Star Schema Design**:
    
 - **Dimension Tables: Store descriptive data**
 #### Dim tables
--**dim_product**
--**dim_store**
--**dim_customer**
--**dim_date**
--**dim_supplier**
--**dim_employee**
+- **dim_product**
+- **dim_store**
+- **dim_customer**
+- **dim_date**
+- **dim_supplier**
+- **dim_employee**
 
 ### Enabling reporting / analytics
 These will allow BI team to build dashboards and they will not limited to one tool Microsoft Power BI but other tools like: Tableau, Microsoft Excel. This answer leadership questions like
 
--**What were the top 5 best-selling products by total revenue between January and June 2024**
--**What was the total revenue per store, broken down by month, for the January–June 2024 period?**
--**What is the month-over-month revenue growth rate across all stores combined?**
--**Who are the top 10 loyalty customers ranked by total spend over the reporting period?**
--**Which registered loyalty customers have not made a purchase since 28 April 2024? These customers must be flagged for a targeted win-back campaign.**
--**What is the average transaction value broken down by customer loyalty tier (Bronze, Silver, Gold)?**
--**What is the total quantity sold per product category, per store, for the reporting period?**
--**Which store-product combinations**
+- **What were the top 5 best-selling products by total revenue between January and June 2024**
+- **What was the total revenue per store, broken down by month, for the January–June 2024 period?**
+- **What is the month-over-month revenue growth rate across all stores combined?**
+- **Who are the top 10 loyalty customers ranked by total spend over the reporting period?**
+- **Which registered loyalty customers have not made a purchase since 28 April 2024? These customers must be flagged for a targeted win-back campaign.**
+- **What is the average transaction value broken down by customer loyalty tier (Bronze, Silver, Gold)?**
+- **What is the total quantity sold per product category, per store, for the reporting period?**
+- **Which store-product combinations**
 
 ### ETL Process
 -**Extract** data from source files/database  
