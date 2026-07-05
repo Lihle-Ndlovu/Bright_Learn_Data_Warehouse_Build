@@ -53,6 +53,7 @@ These will allow BI team to build dashboards and they will not limited to one to
 ### Project Diagram
 
 ###### Output Preview
+
 ![Project Diagram])(images/star_schema.png)
 
 
