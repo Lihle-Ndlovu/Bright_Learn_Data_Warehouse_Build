@@ -17,12 +17,12 @@ The project follows a **Star Schema Design**:
    
 - **Dimension Tables: Store descriptive data**
 #### Dim tables
-- **dim_product**
-- **dim_store**
-- **dim_customer**
-- **dim_date**
-- **dim_supplier**
-- **dim_employee**
+- **dim_product
+- **dim_store
+- **dim_customer
+- **dim_date
+- **dim_supplier
+- **dim_employee
 
 ### Enabling reporting / analytics
 These will allow BI team to build dashboards and they will not limited to one tool Microsoft Power BI but other tools like: Tableau, Microsoft Excel. This answer leadership questions like
