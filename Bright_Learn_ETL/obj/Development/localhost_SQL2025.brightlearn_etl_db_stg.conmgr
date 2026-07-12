@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost_SQL2025.brightlearn_etl_db_stg"
+  DTS:DTSID="{D91BC460-F60F-4404-B8E1-B589894F726F}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost\SQL2025;Initial Catalog=brightlearn_etl_db_stg;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Bright_Learn_ETL-{D91BC460-F60F-4404-B8E1-B589894F726F}localhost\SQL2025.brightlearn_etl_db_stg;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
