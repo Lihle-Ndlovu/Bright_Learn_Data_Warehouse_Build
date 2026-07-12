@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>Bright_Learn_ETL</Name>
-    <LastWriteTime>2026-07-11T19:04:44.4154582Z</LastWriteTime>
+    <LastWriteTime>2026-07-12T10:09:41.9940279Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>01.load_data_stg.dtsx</Name>
-      <LastWriteTime>2026-07-11T19:14:11.9825397Z</LastWriteTime>
+      <LastWriteTime>2026-07-12T10:06:13.7906446Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>

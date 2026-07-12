@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">LIHLE</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAW1NSAf04q0yRe28jQoMyQgAAAAACAAAAAAAQZgAAAAEAACAAAACAj8yf2Z5+YDVwXn1v/m9MxQBW3zJbpINS39lNR68pegAAAAAOgAAAAAIAACAAAAAMyVoCkuK+ngrSvUGmUI8VmtqjkUwix1lrPnMGwL9ayZAAAADjTauCcqGbdYeq99dmeiFP0xAfsVNpGXqaDYZy+Kpa0DF9jF4rrrT55fgoOItC+lb9A5NV+R4ImWH/I47Etw/OxSq7LJBy+YdD1G4zgMVH9iTx8WyFBeI0ghwugmMdThCf/i6EF4bHcBP0uIjgAdgvgJA5G+omPtp6IfWVvdI2ZvAbVjQtUGttIUZnDmjhRCBAAAAAIKuvnYXHTfW3+3gheVzAzc6tPDTZXSWNrPWxrK+Uwugni3XrD4pheFx++By5bO1DzuqKI8j5Lx27jzxCqQHRJw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAW1NSAf04q0yRe28jQoMyQgAAAAACAAAAAAAQZgAAAAEAACAAAABc1aAuOZHYa+0qojEFbE6eO2OSWHv2a8NSmwPW4a5i0wAAAAAOgAAAAAIAACAAAACGKd0n2Cc8mzOySwg6WkM74MmfhDL5tz1vaJeEaB+bcJAAAACrgRpjxERzg40Xm2vNCBNAiE9OmU3JvAj0mIX9yTI7SI0vo4efZG0abkA/7VYCX2JLGa1jySOkc8Ce7svYLw3QnT908spdsA0rrjslyjCcJxS5lgZnbQd+yEDDzMISEFQZqX23gchB0DgkTw603kxO5Jdul9FCVr6Sm87JtETwkTmC5woqrmvVoOntsMmtixZAAAAAQZMo3md7isSvZoKiNle3hjtF5/2VTr63U9BN8BnHKFrJorxThnBZPUx6R1U0D5+vDpZgJNUA3LxakrKf6B0+Aw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -351,10 +351,10 @@
                 <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">47</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">48</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{F03B858C-E1D7-42E0-8BB0-249BDA10EF9B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{EF2AA56D-1B85-4B2A-A683-0869BC726F5D}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -419,21 +419,6 @@
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.load_csv_file.ConnectionString">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\kylie\Bright_Learn_Data_Warehouse_Build\raw_data\BrightLearn_Raw_Data.csv</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.load_csv_file.DataRowsToSkip">

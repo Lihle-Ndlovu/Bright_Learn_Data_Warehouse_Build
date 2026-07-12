@@ -11,8 +11,8 @@
   DTS:LocaleID="7177"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="47"
-  DTS:VersionGUID="{F03B858C-E1D7-42E0-8BB0-249BDA10EF9B}">
+  DTS:VersionBuild="48"
+  DTS:VersionGUID="{EF2AA56D-1B85-4B2A-A683-0869BC726F5D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -21,6 +21,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{81E1460B-1054-493E-8D44-324E94C136EE}"
       DTS:ObjectName="load_csv_file">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[$Project::csv_path_file]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
