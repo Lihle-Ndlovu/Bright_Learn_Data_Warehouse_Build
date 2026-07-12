@@ -1,8 +1,12 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="localhost_SQL2025.brightlearn_etl_db"
   DTS:DTSID="{314FA2C3-221F-45CA-9177-41F06CAE42EB}"
   DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">"Data Source=" + @[$Project::sever_name] +
+";Initial Catalog=" + @[$Project::dwh_database] +
+";Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;"</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="1"

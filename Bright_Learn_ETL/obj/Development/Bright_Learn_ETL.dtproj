@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">LIHLE</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAW1NSAf04q0yRe28jQoMyQgAAAAACAAAAAAAQZgAAAAEAACAAAABc1aAuOZHYa+0qojEFbE6eO2OSWHv2a8NSmwPW4a5i0wAAAAAOgAAAAAIAACAAAACGKd0n2Cc8mzOySwg6WkM74MmfhDL5tz1vaJeEaB+bcJAAAACrgRpjxERzg40Xm2vNCBNAiE9OmU3JvAj0mIX9yTI7SI0vo4efZG0abkA/7VYCX2JLGa1jySOkc8Ce7svYLw3QnT908spdsA0rrjslyjCcJxS5lgZnbQd+yEDDzMISEFQZqX23gchB0DgkTw603kxO5Jdul9FCVr6Sm87JtETwkTmC5woqrmvVoOntsMmtixZAAAAAQZMo3md7isSvZoKiNle3hjtF5/2VTr63U9BN8BnHKFrJorxThnBZPUx6R1U0D5+vDpZgJNUA3LxakrKf6B0+Aw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAW1NSAf04q0yRe28jQoMyQgAAAAACAAAAAAAQZgAAAAEAACAAAAD1NEOLoVnOUsFq5waQPkv0GqVZ6UQBVl4xz/LUnjcOnAAAAAAOgAAAAAIAACAAAAB5IblSnXcZPSeN/hhDfgzUGdsrmGvDxdpc/yKhFAZWw5AAAABanKY02Kdoszkmkh5oTEd/kxxP7/Yyy567UYWqCGuNzv9Gc02ZvkuSWK8kB/SU0dMvyovnheqpK4c5f4EfSpvNVRVHkZ8jBxFOY2R/crn3+WNQUR5bx50NbHfasuZ0hEvYxdv+XwFP4NGMo9+SLDA8RLx5lzgnSOicCzI9UdocviGJwdBQy0bbbE88OICop/1AAAAAxVyPsBL38k5UTsK87KGp4xULb6SeN9yquIEdW+wIp486EdYhD4KoLlpC7ZkrlbTOiWA6lbwROSABQOSkY+Ec5g==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -60,21 +60,6 @@
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.localhost_SQL2025.brightlearn_etl_db.ConnectionString">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=localhost\SQL2025;Initial Catalog=brightlearn_etl_db;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Bright_Learn_ETL-{314FA2C3-221F-45CA-9177-41F06CAE42EB}localhost\SQL2025.brightlearn_etl_db;</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
             <SSIS:Parameter SSIS:Name="CM.localhost_SQL2025.brightlearn_etl_db.ConnectRetryCount">
@@ -208,21 +193,6 @@
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.localhost_SQL2025.brightlearn_etl_db_stg.ConnectionString">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=localhost\SQL2025;Initial Catalog=brightlearn_etl_db_stg;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Bright_Learn_ETL-{D91BC460-F60F-4404-B8E1-B589894F726F}localhost\SQL2025.brightlearn_etl_db_stg;</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
             <SSIS:Parameter SSIS:Name="CM.localhost_SQL2025.brightlearn_etl_db_stg.ConnectRetryCount">
@@ -508,8 +478,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
