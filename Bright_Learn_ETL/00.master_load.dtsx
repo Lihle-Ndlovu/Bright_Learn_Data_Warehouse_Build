@@ -11,8 +11,8 @@
   DTS:LocaleID="7177"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{8F631B98-AB50-4688-8E5B-162FFE0F043F}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{522B6407-9519-4877-A1FC-35326D228AAE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -21,6 +21,7 @@
       DTS:refId="Package\load_csv"
       DTS:CreationName="Microsoft.ExecutePackageTask"
       DTS:Description="Execute Package Task"
+      DTS:Disabled="True"
       DTS:DTSID="{58759AB4-B275-4567-9DA4-94D6DA65E384}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
@@ -254,9 +255,37 @@
           Id="Package\load_csv"
           TopLeft="300.833316896525,20.7999998553594" />
         <NodeLayout
+          Size="168.8,41.6"
+          Id="Package\load_dim_customer"
+          TopLeft="330.833315257398,146.466665648156" />
+        <NodeLayout
           Size="152.8,41.6"
           Id="Package\load_dim_date"
           TopLeft="70.8333294631708,139.533332363036" />
+        <NodeLayout
+          Size="184.8,41.6"
+          Id="Package\load_dim_location"
+          TopLeft="319.999982515972,285.133331350551" />
+        <NodeLayout
+          Size="184.8,41.6"
+          Id="Package\load_dim_payment"
+          TopLeft="24.9999986340602,407.333330500788" />
+        <NodeLayout
+          Size="184.8,41.6"
+          Id="Package\load_dim_product"
+          TopLeft="598.333300641843,145.599998987516" />
+        <NodeLayout
+          Size="184.8,41.6"
+          Id="Package\load_dim_supplier"
+          TopLeft="591.666634339427,278.199998065432" />
+        <NodeLayout
+          Size="184.8,41.6"
+          Id="Package\load_employee"
+          TopLeft="28.3333317852683,285.133331350552" />
+        <NodeLayout
+          Size="184.8,41.6"
+          Id="Package\load_fact_table"
+          TopLeft="336.666648272012,411.666663803988" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="360.433316896525,62.3999998553594">
@@ -291,10 +320,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="168.8,41.6"
-          Id="Package\load_dim_customer"
-          TopLeft="330.833315257398,146.466665648156" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="223.633329463171,163.799999005596">
@@ -317,10 +342,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="184.8,41.6"
-          Id="Package\load_dim_product"
-          TopLeft="598.333300641843,145.599998987516" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="499.633315257398,166.833332317836">
@@ -343,10 +364,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="184.8,41.6"
-          Id="Package\load_dim_supplier"
-          TopLeft="591.666634339427,278.199998065432" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
           TopLeft="687.399967490635,187.199998987516">
@@ -369,10 +386,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="184.8,41.6"
-          Id="Package\load_dim_location"
-          TopLeft="319.999982515972,285.133331350551" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
           TopLeft="591.666634339427,302.466664707992">
@@ -395,10 +408,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="184.8,41.6"
-          Id="Package\load_employee"
-          TopLeft="28.3333317852683,285.133331350552" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
           TopLeft="319.999982515972,305.933331350552">
@@ -421,10 +430,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="184.8,41.6"
-          Id="Package\load_dim_payment"
-          TopLeft="24.9999986340602,407.333330500788" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
           TopLeft="119.066665209664,326.733331350552">
@@ -447,10 +452,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="184.8,41.6"
-          Id="Package\load_fact_table"
-          TopLeft="336.666648272012,411.666663803988" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7]"
           TopLeft="209.79999863406,430.299997152388">

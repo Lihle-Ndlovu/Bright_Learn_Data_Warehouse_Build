@@ -11,8 +11,8 @@
   DTS:LocaleID="7177"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{92BF267C-432A-42CE-B4D1-CE39E2978E8A}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{AED5DAD5-6FFF-4BD3-9B4E-010F6C84A674}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -21,6 +21,7 @@
       DTS:refId="Package\1_create_dim_employee"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{6AF202E5-1403-4919-A748-BF47CDBB05ED}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -130,6 +131,14 @@
           Size="171.2,41.6"
           Id="Package\2_load_stg_supplier"
           TopLeft="402.49997800837,180.266665413115" />
+        <NodeLayout
+          Size="191.2,41.6"
+          Id="Package\3_load_clean_employee"
+          TopLeft="214.999988252918,331.06666436447" />
+        <NodeLayout
+          Size="183.2,41.6"
+          Id="Package\4_load_dim_employee"
+          TopLeft="590.833301051625,421.199997071028" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="150.999996994933,113.533332833118">
@@ -164,10 +173,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="191.2,41.6"
-          Id="Package\3_load_clean_employee"
-          TopLeft="214.999988252918,331.06666436447" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="488.09997800837,221.866665413115">
@@ -202,10 +207,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="183.2,41.6"
-          Id="Package\4_load_dim_employee"
-          TopLeft="590.833301051625,421.199997071028" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="310.599988252918,372.66666436447">

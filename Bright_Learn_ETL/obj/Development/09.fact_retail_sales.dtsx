@@ -11,8 +11,8 @@
   DTS:LocaleID="7177"
   DTS:ObjectName="09 fact_retail_sales"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{20DF04C2-E294-49BD-8200-3468BD63A83D}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{88B917A4-6AE9-45DB-BCEF-BEB5F4D16153}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -21,6 +21,7 @@
       DTS:refId="Package\1_create_fact_table"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{1219BBF6-52FA-41F6-ACFD-5AF6668BA75C}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"

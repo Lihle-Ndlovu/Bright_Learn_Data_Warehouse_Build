@@ -11,8 +11,8 @@
   DTS:LocaleID="7177"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{E4058CED-0DAD-43F2-8345-E00165D9F05C}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{E755AD37-F835-4AB1-922A-A5F5211ABB40}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -21,6 +21,7 @@
       DTS:refId="Package\1_create_dim_supplier"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{DCF3E4FE-4E6F-4C35-A13D-D1B24BE288A8}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -130,6 +131,14 @@
           Size="171.2,41.6"
           Id="Package\2_load_stg_supplier"
           TopLeft="451.666641988689,162.933332200315" />
+        <NodeLayout
+          Size="207.2,41.6"
+          Id="Package\3_load_clean_suppliers"
+          TopLeft="94.1666615216271,333.66666434639" />
+        <NodeLayout
+          Size="174.4,41.6"
+          Id="Package\4_load_dim_supplier"
+          TopLeft="490.833306515384,435.066663641267" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="158.666663024161,96.1999996203184">
@@ -164,10 +173,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="207.2,41.6"
-          Id="Package\3_load_clean_suppliers"
-          TopLeft="94.1666615216271,333.66666434639" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="537.266641988689,204.533332200315">
@@ -202,10 +207,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="174.4,41.6"
-          Id="Package\4_load_dim_supplier"
-          TopLeft="490.833306515384,435.066663641267" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="197.766661521627,375.26666434639">

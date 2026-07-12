@@ -11,18 +11,16 @@
   DTS:LocaleID="7177"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="48"
-  DTS:VersionGUID="{EF2AA56D-1B85-4B2A-A683-0869BC726F5D}">
+  DTS:VersionBuild="71"
+  DTS:VersionGUID="{772E41E7-7DA1-4965-A8D9-62301E22C46D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[load_csv_file]"
+      DTS:refId="Package.ConnectionManagers[csv_file_load]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{81E1460B-1054-493E-8D44-324E94C136EE}"
-      DTS:ObjectName="load_csv_file">
-      <DTS:PropertyExpression
-        DTS:Name="ConnectionString">@[$Project::csv_path_file]</DTS:PropertyExpression>
+      DTS:DTSID="{78DB9E18-1B7C-4476-A50A-C74FCD0873FF}"
+      DTS:ObjectName="csv_file_load">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -40,7 +38,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="transaction_date"
-              DTS:DTSID="{5B233DF6-EAEE-44D7-A9DA-EC6F8688D87E}"
+              DTS:DTSID="{246F97FC-CEC5-4641-98FA-AE5FEE70F986}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -49,7 +47,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="payment_method"
-              DTS:DTSID="{EFC7510F-41FB-4E0C-A864-16CE4C213553}"
+              DTS:DTSID="{9CED6A00-7641-4F79-AB68-0EE71E70595F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -58,7 +56,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="cashier_name"
-              DTS:DTSID="{9593610E-A5D9-494A-8AC3-D86956A46087}"
+              DTS:DTSID="{DE22F3B1-EAB7-43EB-BBCE-3AA958075B2A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -67,7 +65,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="transaction_amount"
-              DTS:DTSID="{5CF4093E-BF62-4C36-B92E-482D51AE8F6E}"
+              DTS:DTSID="{0F57D4AC-5F81-4638-96DE-922D720918B5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -76,7 +74,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="transaction_discount"
-              DTS:DTSID="{09E6ABDB-2DAD-4A14-BED1-0B3D65794A99}"
+              DTS:DTSID="{C08C7FD7-FFAF-409D-B032-2054648D7425}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -85,7 +83,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="customer_first_name"
-              DTS:DTSID="{CA12C952-1283-450E-89D3-2B19EBE6B3E0}"
+              DTS:DTSID="{2F45B396-0440-481B-9FD4-9C514CFF86BB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -94,7 +92,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="customer_last_name"
-              DTS:DTSID="{BCD0A3B7-9496-4F49-BED0-EC9798086B48}"
+              DTS:DTSID="{14F35AEA-8218-448D-BBD0-1E2E59A82F57}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -103,7 +101,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="customer_email"
-              DTS:DTSID="{726DFF0A-6E70-4DB2-BB36-E0EDA4208795}"
+              DTS:DTSID="{24DC0C6A-5E59-4E10-A9C5-CB1F15FC39BE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,7 +110,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="customer_phone"
-              DTS:DTSID="{8100E2A3-BDBC-4C44-A187-4623F2C3E726}"
+              DTS:DTSID="{1EBEFE62-DA3C-4C22-97D2-AA46C6942621}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -121,7 +119,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="customer_city"
-              DTS:DTSID="{F6ABB2B8-D96D-4DAA-9A89-389DB7F912FD}"
+              DTS:DTSID="{F28DF977-E866-4452-9A3F-7C7B3224E1FF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -130,7 +128,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="customer_province"
-              DTS:DTSID="{AADDC814-ECA2-419A-9A13-E78B63D57EF3}"
+              DTS:DTSID="{35CE90F6-DAC3-44AA-A5C5-1C8204047F61}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -139,7 +137,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="customer_loyalty_tier"
-              DTS:DTSID="{6ECFDA2C-F9F7-4023-AB2D-25C2697A47CD}"
+              DTS:DTSID="{02256879-86F8-49CE-AEF5-20B08DADC86E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -148,7 +146,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="customer_since"
-              DTS:DTSID="{1EEB3D22-D4A9-46AE-84B8-1CBC80405798}"
+              DTS:DTSID="{FF4579DD-37DA-4659-89F1-B0D7877A528C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -157,7 +155,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="store_name"
-              DTS:DTSID="{DA0DC8B3-DE00-4D10-90F9-1D32304E36FD}"
+              DTS:DTSID="{6C81E137-4E9B-462A-A0E0-1B3603681791}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -166,7 +164,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="store_city"
-              DTS:DTSID="{0454DF49-C69C-48BA-8452-3276BC94BD59}"
+              DTS:DTSID="{6BBE5B3E-E126-428C-9D13-9525CE2823C1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -175,7 +173,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="store_province"
-              DTS:DTSID="{67BE4D24-5EC2-454A-B5BD-457C83263A11}"
+              DTS:DTSID="{E13019B2-4DCF-449F-AD9B-BEAC379811F0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -184,7 +182,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="store_region"
-              DTS:DTSID="{D8F9D4BA-F878-433A-A5FB-1F0D1DF82343}"
+              DTS:DTSID="{24114603-1D8F-4F77-BF40-B585C8A36D03}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -193,7 +191,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="store_manager"
-              DTS:DTSID="{C3D8EC3A-E1F7-401D-8A55-A0606B693E92}"
+              DTS:DTSID="{5271FE22-EDFE-4088-9DA9-CC901E34360D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -202,7 +200,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="product_name"
-              DTS:DTSID="{905ADEE4-999A-493B-80A0-C7B5C529E383}"
+              DTS:DTSID="{971E82F7-3C61-4668-B691-D1FEED796970}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -211,7 +209,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="category"
-              DTS:DTSID="{D648AF2A-B142-48FE-8799-0503E97563B4}"
+              DTS:DTSID="{E0817826-D835-4AD6-A125-735F7589383A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -220,7 +218,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="sub_category"
-              DTS:DTSID="{9A094F65-A2BA-4C65-9E22-FF0B3CF7DCD6}"
+              DTS:DTSID="{0A0566FE-D82C-41DE-9DA8-A7C37C9FB9C0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -229,7 +227,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="sku"
-              DTS:DTSID="{1B87DC6E-66A8-461D-89C3-6FDDB38708EC}"
+              DTS:DTSID="{49B48E8C-0132-4111-B62E-F34418301684}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -238,7 +236,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="unit_price"
-              DTS:DTSID="{20BD32DE-44CF-43AF-B236-464B9375809D}"
+              DTS:DTSID="{1B3BDC0D-A3E9-4E34-8746-72113DECC71C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -247,7 +245,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="cost_price"
-              DTS:DTSID="{301736B5-27A7-4A7D-A7A2-1E5A7E26E536}"
+              DTS:DTSID="{A44EB926-86F1-41D1-A88A-32C7E40D4B68}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -256,7 +254,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="supplier"
-              DTS:DTSID="{D3669C02-B9BF-4D45-A8CF-37603C6FA1A7}"
+              DTS:DTSID="{26A410A2-108F-4425-8D19-A722DBAE24AD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -265,7 +263,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="qty"
-              DTS:DTSID="{D56A9A47-64BE-4640-978A-71D0E9EE80F3}"
+              DTS:DTSID="{085786CF-9FC2-4D7E-8FE5-EBCC058FC8C4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -274,7 +272,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="line_amount"
-              DTS:DTSID="{5F6DF906-4392-4A67-B3DE-BBE87D505E2F}"
+              DTS:DTSID="{A32F4A54-5F86-4FAE-B92A-D3E772AA4F48}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -283,7 +281,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="stock_on_hand"
-              DTS:DTSID="{2FFB6E11-7943-492E-A9A3-28D7E7B60837}"
+              DTS:DTSID="{4AD84711-B1D7-4B3D-9931-75B7F33E8C7D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -292,7 +290,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="reorder_threshold"
-              DTS:DTSID="{571C1012-709A-4095-A922-155A94E08BC7}"
+              DTS:DTSID="{891CBBA8-3B27-4516-B2C2-A7DFC5348DD1}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -316,11 +314,828 @@
           version="1">
           <components>
             <component
-              refId="Package\Load Data - Staging\dst_raw_pos_data"
+              refId="Package\Load Data - Staging\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="7177"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Data - Staging\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[csv_file_load]"
+                  connectionManagerRefId="Package.ConnectionManagers[csv_file_load]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[transaction_date]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[transaction_date]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[transaction_date]"
+                      name="transaction_date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[payment_method]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[payment_method]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[payment_method]"
+                      name="payment_method"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[cashier_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cashier_name]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[cashier_name]"
+                      name="cashier_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[transaction_amount]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[transaction_amount]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[transaction_amount]"
+                      name="transaction_amount"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[transaction_discount]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[transaction_discount]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[transaction_discount]"
+                      name="transaction_discount"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_first_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_first_name]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_first_name]"
+                      name="customer_first_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_last_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_last_name]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_last_name]"
+                      name="customer_last_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_email]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_email]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_email]"
+                      name="customer_email"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_phone]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_phone]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_phone]"
+                      name="customer_phone"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_city]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_city]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_city]"
+                      name="customer_city"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_province]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_province]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_province]"
+                      name="customer_province"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_loyalty_tier]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_loyalty_tier]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_loyalty_tier]"
+                      name="customer_loyalty_tier"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_since]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_since]"
+                      length="10"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_since]"
+                      name="customer_since"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[store_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[store_name]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[store_name]"
+                      name="store_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[store_city]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[store_city]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[store_city]"
+                      name="store_city"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[store_province]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[store_province]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[store_province]"
+                      name="store_province"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[store_region]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[store_region]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[store_region]"
+                      name="store_region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[store_manager]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[store_manager]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[store_manager]"
+                      name="store_manager"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[product_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[product_name]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[product_name]"
+                      name="product_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[category]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[category]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[category]"
+                      name="category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[sub_category]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sub_category]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[sub_category]"
+                      name="sub_category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[sku]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sku]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[sku]"
+                      name="sku"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[unit_price]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[unit_price]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[unit_price]"
+                      name="unit_price"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[cost_price]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cost_price]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[cost_price]"
+                      name="cost_price"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[supplier]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[supplier]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[supplier]"
+                      name="supplier"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[qty]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[qty]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[qty]"
+                      name="qty"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[line_amount]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[line_amount]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[line_amount]"
+                      name="line_amount"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[stock_on_hand]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[stock_on_hand]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[stock_on_hand]"
+                      name="stock_on_hand"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[reorder_threshold]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[reorder_threshold]"
+                      length="255"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[reorder_threshold]"
+                      name="reorder_threshold"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[transaction_date]"
+                      dataType="dbDate"
+                      name="transaction_date" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[payment_method]"
+                      dataType="wstr"
+                      length="255"
+                      name="payment_method" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cashier_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="cashier_name" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[transaction_amount]"
+                      dataType="wstr"
+                      length="255"
+                      name="transaction_amount" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[transaction_discount]"
+                      dataType="wstr"
+                      length="255"
+                      name="transaction_discount" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_first_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="customer_first_name" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_last_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="customer_last_name" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_email]"
+                      dataType="wstr"
+                      length="255"
+                      name="customer_email" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_phone]"
+                      dataType="wstr"
+                      length="255"
+                      name="customer_phone" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_city]"
+                      dataType="wstr"
+                      length="255"
+                      name="customer_city" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_province]"
+                      dataType="wstr"
+                      length="255"
+                      name="customer_province" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_loyalty_tier]"
+                      dataType="wstr"
+                      length="255"
+                      name="customer_loyalty_tier" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[customer_since]"
+                      dataType="wstr"
+                      length="10"
+                      name="customer_since" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[store_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="store_name" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[store_city]"
+                      dataType="wstr"
+                      length="255"
+                      name="store_city" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[store_province]"
+                      dataType="wstr"
+                      length="255"
+                      name="store_province" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[store_region]"
+                      dataType="wstr"
+                      length="255"
+                      name="store_region" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[store_manager]"
+                      dataType="wstr"
+                      length="255"
+                      name="store_manager" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[product_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="product_name" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[category]"
+                      dataType="wstr"
+                      length="255"
+                      name="category" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sub_category]"
+                      dataType="wstr"
+                      length="255"
+                      name="sub_category" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sku]"
+                      dataType="wstr"
+                      length="255"
+                      name="sku" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[unit_price]"
+                      dataType="wstr"
+                      length="255"
+                      name="unit_price" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cost_price]"
+                      dataType="wstr"
+                      length="255"
+                      name="cost_price" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[supplier]"
+                      dataType="wstr"
+                      length="255"
+                      name="supplier" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[qty]"
+                      dataType="wstr"
+                      length="255"
+                      name="qty" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[line_amount]"
+                      dataType="wstr"
+                      length="255"
+                      name="line_amount" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[stock_on_hand]"
+                      dataType="wstr"
+                      length="255"
+                      name="stock_on_hand" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[reorder_threshold]"
+                      dataType="wstr"
+                      length="255"
+                      name="reorder_threshold" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Data - Staging\OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="dst_raw_pos_data"
+              name="OLE DB Destination"
               usesDispositions="true"
               version="4">
               <properties>
@@ -373,7 +1188,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Load Data - Staging\dst_raw_pos_data.Connections[OleDbConnection]"
+                  refId="Package\Load Data - Staging\OLE DB Destination.Connections[OleDbConnection]"
                   connectionManagerID="{D91BC460-F60F-4404-B8E1-B589894F726F}:external"
                   connectionManagerRefId="Project.ConnectionManagers[localhost_SQL2025.brightlearn_etl_db_stg]"
                   description="The OLE DB runtime connection used to access the database."
@@ -381,1178 +1196,385 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input]"
+                  refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[transaction_date]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[transaction_date]"
                       cachedDataType="dbDate"
                       cachedName="transaction_date"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[transaction_date]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[transaction_date]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[transaction_date]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[transaction_date]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[payment_method]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[payment_method]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="payment_method"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[payment_method]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[payment_method]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[payment_method]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[payment_method]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[cashier_name]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[cashier_name]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="cashier_name"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[cashier_name]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[cashier_name]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cashier_name]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[cashier_name]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[transaction_amount]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[transaction_amount]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="transaction_amount"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[transaction_amount]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[transaction_amount]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[transaction_amount]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[transaction_amount]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[transaction_discount]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[transaction_discount]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="transaction_discount"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[transaction_discount]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[transaction_discount]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[transaction_discount]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[transaction_discount]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[customer_first_name]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_first_name]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="customer_first_name"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[customer_first_name]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_first_name]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_first_name]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_first_name]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[customer_last_name]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_last_name]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="customer_last_name"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[customer_last_name]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_last_name]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_last_name]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_last_name]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[customer_email]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_email]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="customer_email"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[customer_email]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_email]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_email]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_email]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[customer_phone]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_phone]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="customer_phone"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[customer_phone]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_phone]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_phone]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_phone]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[customer_loyalty_tier]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_city]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="customer_city"
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_city]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_city]" />
+                    <inputColumn
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_province]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="customer_province"
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_province]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_province]" />
+                    <inputColumn
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_loyalty_tier]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="customer_loyalty_tier"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[customer_loyalty_tier]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_loyalty_tier]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_loyalty_tier]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_loyalty_tier]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[customer_since]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_since]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="customer_since"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[customer_since]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_since]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_since]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[customer_since]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[store_name]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[store_name]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="store_name"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[store_name]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[store_name]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[store_name]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[store_name]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[store_city]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[store_city]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="store_city"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[store_city]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[store_city]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[store_city]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[store_city]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[store_province]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[store_province]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="store_province"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[store_province]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[store_province]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[store_province]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[store_province]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[store_region]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[store_region]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="store_region"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[store_region]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[store_region]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[store_region]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[store_region]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[store_manager]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[store_manager]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="store_manager"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[store_manager]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[store_manager]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[store_manager]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[store_manager]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[product_name]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[product_name]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="product_name"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[product_name]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[product_name]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[product_name]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[product_name]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[category]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[category]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="category"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[category]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[category]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[category]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[category]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[sub_category]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[sub_category]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="sub_category"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[sub_category]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[sub_category]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sub_category]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[sub_category]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[sku]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[sku]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="sku"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[sku]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[sku]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sku]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[sku]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[unit_price]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[unit_price]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="unit_price"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[unit_price]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[unit_price]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[unit_price]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[unit_price]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[cost_price]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[cost_price]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="cost_price"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[cost_price]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[cost_price]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cost_price]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[cost_price]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[supplier]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[supplier]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="supplier"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[supplier]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[supplier]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[supplier]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[supplier]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[qty]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[qty]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="qty"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[qty]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[qty]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[qty]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[qty]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[line_amount]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[line_amount]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="line_amount"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[line_amount]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[line_amount]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[line_amount]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[line_amount]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[stock_on_hand]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[stock_on_hand]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="stock_on_hand"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[stock_on_hand]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[stock_on_hand]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[stock_on_hand]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[stock_on_hand]" />
                     <inputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].Columns[reorder_threshold]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[reorder_threshold]"
                       cachedDataType="wstr"
                       cachedLength="255"
                       cachedName="reorder_threshold"
-                      externalMetadataColumnId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[reorder_threshold]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[reorder_threshold]" />
+                      externalMetadataColumnId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[reorder_threshold]"
+                      lineageId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output].Columns[reorder_threshold]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[transaction_date]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[transaction_date]"
                       dataType="wstr"
                       length="10"
                       name="transaction_date" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[payment_method]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[payment_method]"
                       dataType="wstr"
                       length="255"
                       name="payment_method" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[store_manager]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[store_manager]"
                       dataType="wstr"
                       length="255"
                       name="store_manager" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[cashier_name]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cashier_name]"
                       dataType="wstr"
                       length="255"
                       name="cashier_name" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[customer_first_name]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_first_name]"
                       dataType="wstr"
                       length="255"
                       name="customer_first_name" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[customer_last_name]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_last_name]"
                       dataType="wstr"
                       length="255"
                       name="customer_last_name" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[customer_email]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_email]"
                       dataType="wstr"
                       length="255"
                       name="customer_email" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[customer_phone]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_phone]"
                       dataType="wstr"
                       length="255"
                       name="customer_phone" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[customer_loyalty_tier]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_loyalty_tier]"
                       dataType="wstr"
                       length="255"
                       name="customer_loyalty_tier" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[customer_since]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_since]"
                       dataType="wstr"
                       length="10"
                       name="customer_since" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[store_name]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[store_name]"
                       dataType="wstr"
                       length="255"
                       name="store_name" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[store_region]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[store_region]"
                       dataType="wstr"
                       length="255"
                       name="store_region" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[store_province]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[store_province]"
                       dataType="wstr"
                       length="255"
                       name="store_province" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[store_city]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[store_city]"
                       dataType="wstr"
                       length="255"
                       name="store_city" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[product_name]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[product_name]"
                       dataType="wstr"
                       length="255"
                       name="product_name" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[category]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[category]"
                       dataType="wstr"
                       length="255"
                       name="category" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[sub_category]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sub_category]"
                       dataType="wstr"
                       length="255"
                       name="sub_category" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[sku]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sku]"
                       dataType="wstr"
                       length="255"
                       name="sku" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[supplier]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[supplier]"
                       dataType="wstr"
                       length="255"
                       name="supplier" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[unit_price]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[unit_price]"
                       dataType="numeric"
                       name="unit_price"
                       precision="18"
                       scale="2" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[cost_price]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cost_price]"
                       dataType="numeric"
                       name="cost_price"
                       precision="18"
                       scale="2" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[qty]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[qty]"
                       dataType="i4"
                       name="qty" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[line_amount]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[line_amount]"
                       dataType="numeric"
                       name="line_amount"
                       precision="18"
                       scale="2" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[stock_on_hand]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[stock_on_hand]"
                       dataType="i4"
                       name="stock_on_hand" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[transaction_amount]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[transaction_amount]"
                       dataType="numeric"
                       name="transaction_amount"
                       precision="18"
                       scale="2" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[transaction_discount]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[transaction_discount]"
                       dataType="numeric"
                       name="transaction_discount"
                       precision="18"
                       scale="2" />
                     <externalMetadataColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input].ExternalColumns[reorder_threshold]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[reorder_threshold]"
                       dataType="i4"
                       name="reorder_threshold" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_province]"
+                      dataType="wstr"
+                      length="255"
+                      name="customer_province" />
+                    <externalMetadataColumn
+                      refId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_city]"
+                      dataType="wstr"
+                      length="255"
+                      name="customer_city" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Load Data - Staging\dst_raw_pos_data.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Load Data - Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Load Data - Staging\dst_raw_pos_data.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Load Data - Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Load Data - Staging\dst_raw_pos_data.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Load Data - Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Load Data - Staging\dst_raw_pos_data.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Load Data - Staging\src_raw_pos_csv"
-              componentClassID="Microsoft.FlatFileSource"
-              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Flat File Source"
-              localeId="7177"
-              name="src_raw_pos_csv"
-              usesDispositions="true"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Specifies whether zero-length columns are treated as null."
-                  name="RetainNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
-                  name="FileNameColumnName"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Load Data - Staging\src_raw_pos_csv.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[load_csv_file]"
-                  connectionManagerRefId="Package.ConnectionManagers[load_csv_file]"
-                  name="FlatFileConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output]"
-                  name="Flat File Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[transaction_date]"
-                      dataType="dbDate"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[transaction_date]"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[transaction_date]"
-                      name="transaction_date"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[payment_method]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[payment_method]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[payment_method]"
-                      name="payment_method"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[cashier_name]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[cashier_name]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[cashier_name]"
-                      name="cashier_name"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[transaction_amount]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[transaction_amount]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[transaction_amount]"
-                      name="transaction_amount"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[transaction_discount]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[transaction_discount]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[transaction_discount]"
-                      name="transaction_discount"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_first_name]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[customer_first_name]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_first_name]"
-                      name="customer_first_name"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_last_name]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[customer_last_name]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_last_name]"
-                      name="customer_last_name"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_email]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[customer_email]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_email]"
-                      name="customer_email"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_phone]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[customer_phone]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_phone]"
-                      name="customer_phone"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_city]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[customer_city]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_city]"
-                      name="customer_city"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_province]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[customer_province]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_province]"
-                      name="customer_province"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_loyalty_tier]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[customer_loyalty_tier]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_loyalty_tier]"
-                      name="customer_loyalty_tier"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_since]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[customer_since]"
-                      length="10"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[customer_since]"
-                      name="customer_since"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[store_name]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[store_name]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[store_name]"
-                      name="store_name"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[store_city]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[store_city]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[store_city]"
-                      name="store_city"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[store_province]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[store_province]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[store_province]"
-                      name="store_province"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[store_region]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[store_region]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[store_region]"
-                      name="store_region"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[store_manager]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[store_manager]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[store_manager]"
-                      name="store_manager"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[product_name]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[product_name]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[product_name]"
-                      name="product_name"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[category]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[category]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[category]"
-                      name="category"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[sub_category]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[sub_category]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[sub_category]"
-                      name="sub_category"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[sku]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[sku]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[sku]"
-                      name="sku"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[unit_price]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[unit_price]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[unit_price]"
-                      name="unit_price"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[cost_price]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[cost_price]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[cost_price]"
-                      name="cost_price"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[supplier]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[supplier]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[supplier]"
-                      name="supplier"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[qty]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[qty]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[qty]"
-                      name="qty"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[line_amount]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[line_amount]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[line_amount]"
-                      name="line_amount"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[stock_on_hand]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[stock_on_hand]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[stock_on_hand]"
-                      name="stock_on_hand"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[reorder_threshold]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[reorder_threshold]"
-                      length="255"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].Columns[reorder_threshold]"
-                      name="reorder_threshold"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[transaction_date]"
-                      dataType="dbDate"
-                      name="transaction_date" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[payment_method]"
-                      dataType="wstr"
-                      length="255"
-                      name="payment_method" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[cashier_name]"
-                      dataType="wstr"
-                      length="255"
-                      name="cashier_name" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[transaction_amount]"
-                      dataType="wstr"
-                      length="255"
-                      name="transaction_amount" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[transaction_discount]"
-                      dataType="wstr"
-                      length="255"
-                      name="transaction_discount" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[customer_first_name]"
-                      dataType="wstr"
-                      length="255"
-                      name="customer_first_name" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[customer_last_name]"
-                      dataType="wstr"
-                      length="255"
-                      name="customer_last_name" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[customer_email]"
-                      dataType="wstr"
-                      length="255"
-                      name="customer_email" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[customer_phone]"
-                      dataType="wstr"
-                      length="255"
-                      name="customer_phone" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[customer_city]"
-                      dataType="wstr"
-                      length="255"
-                      name="customer_city" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[customer_province]"
-                      dataType="wstr"
-                      length="255"
-                      name="customer_province" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[customer_loyalty_tier]"
-                      dataType="wstr"
-                      length="255"
-                      name="customer_loyalty_tier" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[customer_since]"
-                      dataType="wstr"
-                      length="10"
-                      name="customer_since" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[store_name]"
-                      dataType="wstr"
-                      length="255"
-                      name="store_name" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[store_city]"
-                      dataType="wstr"
-                      length="255"
-                      name="store_city" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[store_province]"
-                      dataType="wstr"
-                      length="255"
-                      name="store_province" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[store_region]"
-                      dataType="wstr"
-                      length="255"
-                      name="store_region" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[store_manager]"
-                      dataType="wstr"
-                      length="255"
-                      name="store_manager" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[product_name]"
-                      dataType="wstr"
-                      length="255"
-                      name="product_name" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[category]"
-                      dataType="wstr"
-                      length="255"
-                      name="category" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[sub_category]"
-                      dataType="wstr"
-                      length="255"
-                      name="sub_category" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[sku]"
-                      dataType="wstr"
-                      length="255"
-                      name="sku" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[unit_price]"
-                      dataType="wstr"
-                      length="255"
-                      name="unit_price" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[cost_price]"
-                      dataType="wstr"
-                      length="255"
-                      name="cost_price" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[supplier]"
-                      dataType="wstr"
-                      length="255"
-                      name="supplier" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[qty]"
-                      dataType="wstr"
-                      length="255"
-                      name="qty" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[line_amount]"
-                      dataType="wstr"
-                      length="255"
-                      name="line_amount" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[stock_on_hand]"
-                      dataType="wstr"
-                      length="255"
-                      name="stock_on_hand" />
-                    <externalMetadataColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output].ExternalColumns[reorder_threshold]"
-                      dataType="wstr"
-                      length="255"
-                      name="reorder_threshold" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Error Output]"
-                  isErrorOut="true"
-                  name="Flat File Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      codePage="65001"
-                      dataType="text"
-                      description="Flat File Source Error Output Column"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      name="Flat File Source Error Output Column" />
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Load Data - Staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1564,9 +1586,9 @@
           <paths>
             <path
               refId="Package\Load Data - Staging.Paths[Flat File Source Output]"
-              endId="Package\Load Data - Staging\dst_raw_pos_data.Inputs[OLE DB Destination Input]"
+              endId="Package\Load Data - Staging\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Load Data - Staging\src_raw_pos_csv.Outputs[Flat File Source Output]" />
+              startId="Package\Load Data - Staging\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1587,7 +1609,7 @@
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\Load Data - Staging"
-          TopLeft="87.999995492399,79.1666661543979" />
+          TopLeft="87.166662204597,77.433332833118" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -1597,39 +1619,39 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="158.4,41.6"
-          Id="Package\Load Data - Staging\src_raw_pos_csv"
-          TopLeft="76.9999988526106,130.999998047948" />
+          Size="151.2,41.6"
+          Id="Package\Load Data - Staging\Flat File Source"
+          TopLeft="65.5,65.5" />
         <NodeLayout
-          Size="163.2,41.6"
-          Id="Package\Load Data - Staging\dst_raw_pos_data"
-          TopLeft="263.999996066093,209.999996870756" />
+          Size="171.2,41.6"
+          Id="Package\Load Data - Staging\OLE DB Destination"
+          TopLeft="155.5,155.5" />
         <EdgeLayout
           Id="Package\Load Data - Staging.Paths[Flat File Source Output]"
-          TopLeft="156.199998852611,172.599998047948">
+          TopLeft="141.1,107.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="189.399997213482,37.399998822808"
+              EndConnector="100,48.4"
               Start="0,0"
-              End="189.399997213482,29.899998822808">
+              End="100,40.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.699999411404" />
+                    End="0,20.2" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,14.699999411404"
-                    Point2="0,18.699999411404"
-                    Point3="4,18.699999411404" />
+                    Point1="0,20.2"
+                    Point2="0,24.2"
+                    Point3="4,24.2" />
                   <mssgle:LineSegment
-                    End="185.399997213482,18.699999411404" />
+                    End="96,24.2" />
                   <mssgle:CubicBezierSegment
-                    Point1="185.399997213482,18.699999411404"
-                    Point2="189.399997213482,18.699999411404"
-                    Point3="189.399997213482,22.699999411404" />
+                    Point1="96,24.2"
+                    Point2="100,24.2"
+                    Point3="100,28.2" />
                   <mssgle:LineSegment
-                    End="189.399997213482,29.899998822808" />
+                    End="100,40.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1642,7 +1664,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Data - Staging\dst_raw_pos_data">
+    design-time-name="Package\Load Data - Staging\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

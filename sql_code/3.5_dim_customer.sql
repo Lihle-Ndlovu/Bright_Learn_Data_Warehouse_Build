@@ -1,4 +1,3 @@
-
 IF OBJECT_ID('brightlearn_etl_db.dbo.dim_customer', 'U') IS NULL
 BEGIN
     CREATE TABLE brightlearn_etl_db.dbo.dim_customer
@@ -8,6 +7,8 @@ BEGIN
         customer_last_name  VARCHAR(50),
         customer_email      VARCHAR(50),
         customer_phone      VARCHAR(50),
+        customer_province   VARCHAR(50),
+        customer_city       VARCHAR(50),
         CreatedDate         DATETIME DEFAULT GETDATE()
     );
 END;
@@ -16,9 +17,11 @@ END;
 (
     SELECT
         TRIM(customer_first_name) AS customer_first_name,
-        TRIM(customer_last_name)  AS customer_last_name,
+        TRIM(customer_last_name) AS customer_last_name,
         LOWER(TRIM(customer_email)) AS customer_email,
         TRIM(customer_phone) AS customer_phone,
+        TRIM(customer_province) AS customer_province,
+        TRIM(customer_city) AS customer_city,
 
         ROW_NUMBER() OVER
         (
@@ -29,13 +32,17 @@ END;
     FROM brightlearn_etl_db_stg.dbo.clean_dim_customer
 
     WHERE customer_first_name IS NOT NULL
-      AND customer_last_name  IS NOT NULL
-      AND customer_email      IS NOT NULL
-      AND customer_phone      IS NOT NULL
+      AND customer_last_name IS NOT NULL
+      AND customer_email IS NOT NULL
+      AND customer_phone IS NOT NULL
+      AND customer_province IS NOT NULL
+      AND customer_city IS NOT NULL
       AND TRIM(customer_first_name) <> ''
-      AND TRIM(customer_last_name)  <> ''
-      AND TRIM(customer_email)      <> ''
-      AND TRIM(customer_phone)      <> ''
+      AND TRIM(customer_last_name) <> ''
+      AND TRIM(customer_email) <> ''
+      AND TRIM(customer_phone) <> ''
+      AND TRIM(customer_province) <> ''
+      AND TRIM(customer_city) <> ''
 )
 
 INSERT INTO brightlearn_etl_db.dbo.dim_customer
@@ -43,13 +50,17 @@ INSERT INTO brightlearn_etl_db.dbo.dim_customer
     customer_first_name,
     customer_last_name,
     customer_email,
-    customer_phone
+    customer_phone,
+    customer_province,
+    customer_city
 )
 SELECT
     customer_first_name,
     customer_last_name,
     customer_email,
-    customer_phone
+    customer_phone,
+    customer_province,
+    customer_city
 FROM new_customer_CTE
 WHERE rn = 1
 AND NOT EXISTS
@@ -60,4 +71,6 @@ AND NOT EXISTS
       AND d.customer_first_name = new_customer_CTE.customer_first_name
       AND d.customer_last_name = new_customer_CTE.customer_last_name
 );
+GO
 
+select * from brightlearn_etl_db.dbo.dim_customer;
