@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="localhost_SQL2025.brightlearn_etl_db_stg"
   DTS:DTSID="{D91BC460-F60F-4404-B8E1-B589894F726F}"

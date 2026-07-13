@@ -11,8 +11,8 @@
   DTS:LocaleID="7177"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{696137AB-0582-4631-8A99-2F9059A1F3DA}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{472E31AC-61A5-4911-89AE-40491CA7203E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -21,7 +21,6 @@
       DTS:refId="Package\1_create_dim_date"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:Disabled="True"
       DTS:DTSID="{5A793226-5A45-40D6-857A-425538734F5F}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
