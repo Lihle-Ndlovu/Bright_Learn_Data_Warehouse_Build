@@ -1,5 +1,5 @@
 ### Bright_Learn_Data_Warehouse_Build
-Data warehouse implementation for BrightLearn using SQL Server and SSIS, featuring ETL pipelines, star schema design, dimension and fact tables, and business reporting.
+An end-to-end SQL Server data warehouse project for BrightLearn, featuring SSIS ETL pipelines, dimensional modeling, star schema design, fact and dimension tables, data quality validation, and business-ready analytical reporting.
 
 ### Project Overview
 This project builds a data engineering pipeline for BrightLearn’s retail data. The goal is to extract transaction data from multiple store POS systems, transform and clean the data, and load it into a structured data warehouse for reporting and analytics. The data warehouse uses a star schema with fact and dimension tables to support businessinsights such as sales trends, product performance, customer loyalty analysis, and storeperformance. Tools such as CSV files, SQL Sever, and SSIS are used to perform ETL (Extract,Transform, Load) processes.
@@ -48,7 +48,8 @@ These will allow BI team to build dashboards and they will not limited to one to
 - **SSIS (SQL Server Integration Services)** – Used for ETL process (Extract, Transform, Load)  
 - **draw.io** – Used for designing the star schema diagram  
 - **VS Code** – Used for code editing and project management  
-
+- **Git Bash** -Used to run Git commands.
+- **GitHub** -Used to host and manage the project repository.
 
 ### Project Diagram
 
