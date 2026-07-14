@@ -57,6 +57,29 @@ These will allow BI team to build dashboards and they will not limited to one to
 ![Project Diagram](star_schema.png)
 
 
+#### Outcome
+
+- **Built an end-to-end ETL pipeline with SSIS.**
+- **Loaded, transformed, and validated retail data into a SQL Server data warehouse.**
+- **Designed a star schema and delivered analytics-ready data for reporting.**
+
+#### Skills Demonstrated
+
+- **SQL Server & T-SQL**
+- **SSIS (ETL)**
+- **Data Warehousing (Star Schema)**
+- **Data Cleaning & Transformation**
+- **Stored Procedures**
+- **SQL Server Agent**
+- **SSIS Deployment & Parameterization**
+- **Git & GitHub**
+
+#### Key Learnings
+
+- **Built scalable ETL pipelines with SSIS.**
+- **Designed a star schema using fact and dimension tables.**
+- **Deployed and automated ETL workflows.**
+- **Wrote analytical SQL queries for business reporting.**
 
 
 
