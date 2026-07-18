@@ -23,11 +23,7 @@ END;
         TRIM(customer_province) AS customer_province,
         TRIM(customer_city) AS customer_city,
 
-        ROW_NUMBER() OVER
-        (
-            PARTITION BY LOWER(TRIM(customer_email))
-            ORDER BY TRIM(customer_first_name), TRIM(customer_last_name)
-        ) AS rn
+        ROW_NUMBER() OVER (PARTITION BY LOWER(TRIM(customer_email))ORDER BY TRIM(customer_first_name), TRIM(customer_last_name)) AS rn
 
     FROM brightlearn_etl_db_stg.dbo.stg_dim_customer
 
